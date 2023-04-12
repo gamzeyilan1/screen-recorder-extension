@@ -1,0 +1,44 @@
+{
+  "name": " Screen Recorder",
+  "description": "A screen recording extension for Chrome",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "css": [
+        "index.css"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icon_16.png",
+    "32": "icon_32.png",
+    "64": "icon_64.png",
+    "128": "icon_128.png"
+  },
+  "permissions":[
+    "desktopCapture",
+    "storage",
+    "tabs",
+    "tabCapture",
+    "activeTab",
+    "<all_urls>",
+    "identity",
+    "https://www.googleapis.com/*",
+    "VideoCaptureSettings",
+    "Streaming",
+    "DesktopStreaming",
+    "Media",
+    "FileSystem"
+  ],
+  "action": {
+    "default_icon": "icon_16.png",
+    "default_popup": "index.html"
+  }
+}
