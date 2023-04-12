@@ -2,4 +2,4 @@
 
 - developed with pure html css js
 - an extension for chrome, that enables screen recording
-- feel free to pull, change, imrove, add and update.
+- feel free to pull, change, improve, add and update.
