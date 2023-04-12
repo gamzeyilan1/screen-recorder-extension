@@ -7,7 +7,7 @@ let chunks = [];
 navigator.mediaDevices.getDisplayMedia({video: true, DisplayCaptureSurfaceType: "browser"}).then(stream => {
     console.log("Permission");
     console.log("We have not a problem " + stream);
-    howmany++; // how sadece 1 oluyor yani streami bağlıyor video tagine arkadaş.
+    howmany++;
     console.log("how: " + howmany);
     const videoElem = document.getElementById("dene");
     videoElem.srcObject = stream;
