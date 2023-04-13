@@ -5,10 +5,7 @@ const stop = document.getElementById("stop");
 let mediarecorder = null;
 let chunks = [];
 navigator.mediaDevices.getDisplayMedia({video: true, DisplayCaptureSurfaceType: "browser"}).then(stream => {
-    console.log("Permission");
-    console.log("We have not a problem " + stream);
     howmany++;
-    console.log("how: " + howmany);
     const videoElem = document.getElementById("dene");
     videoElem.srcObject = stream;
     strm = stream
@@ -22,7 +19,6 @@ navigator.mediaDevices.getDisplayMedia({video: true, DisplayCaptureSurfaceType: 
         const a = document.getElementById("dow");
         a.href = videourl;
         a.download = "capture.mp4";
-        console.log(videourl);
     }
 })
 
